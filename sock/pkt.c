@@ -6,6 +6,10 @@
 #include <sys/socket.h>
 #include <linux/if_packet.h>
 #include <net/ethernet.h> /* the L2 protocols */
+// get interface index
+#include <sys/ioctl.h>
+#include <net/if.h>
+
 
 int main(void)
 {
@@ -29,8 +33,12 @@ int main(void)
     skt_fd = socket(AF_PACKET, SOCK_DGRAM, htons(ETH_P_IP));
     
     printf("\n skt_fd : %d \n", skt_fd);
+    // get interface index
+    // bind 
+    // recv packets
 
     close(skt_fd);
 
     return 0;
 }
+

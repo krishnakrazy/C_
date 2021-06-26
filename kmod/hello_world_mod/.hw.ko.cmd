@@ -1,0 +1,1 @@
+cmd_/home/test/C/C_/kmod/hello_world_mod/hw.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/test/C/C_/kmod/hello_world_mod/hw.ko /home/test/C/C_/kmod/hello_world_mod/hw.o /home/test/C/C_/kmod/hello_world_mod/hw.mod.o;  true
