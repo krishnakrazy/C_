@@ -1,3 +1,6 @@
+/* sample program to printe hello world
+ */
+
 #include<stdio.h>
 
 int main(void)
