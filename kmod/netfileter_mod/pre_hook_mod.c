@@ -65,6 +65,7 @@ static unsigned int hfunc(void *priv, struct sk_buff *skb, const struct nf_hook_
     else if (iph->protocol == IPPROTO_ICMP){
         return NF_DROP;
 	}
+	
 	return NF_ACCEPT;
 }
 
